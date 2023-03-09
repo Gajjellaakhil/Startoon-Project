@@ -1,0 +1,89 @@
+:root {
+    --white: #FFFFFF;
+    --lightBlue: #C2E3FF;
+    --blue: #008CFF;
+    --darkBlue: #003F73;
+  }
+  
+  .body {
+    padding: 16px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .input-field {
+    background-color: var(--lightBlue);
+    border-radius: 4px;
+    width: 310px;
+    height: 51px;
+    border: 1px solid transparent;
+  }
+  
+  input {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 16px;
+    color: var(--darkBlue);  
+  }
+  
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--darkBlue);
+  }
+  
+  .graphs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+  }
+  
+  .bar-chart {
+    display: flex;
+    align-items: flex-end;
+    width: 101px;
+    height: 275px;
+    border: 1px solid transparent;
+    background-color: var(--lightBlue);
+  }
+  
+  .bar {
+    background-color: var(--blue);
+    flex: 1;
+  }
+  
+  .gradient-bar {
+    background-image: linear-gradient(to top, var(--blue), var(--lightBlue));
+    flex: 1;
+  }
+  
+  .pie-chart {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+  }
+  
+  .level {
+    text-align: center;
+  }
+  
+  .percentage {
+    text-align: center;
+    color: var(--blue);
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }

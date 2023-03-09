@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body onload="initialize()">
+    <div class="body">
+      <h1>Enter Values</h1>
+
+      <div class="form">
+        <input
+          type="number"
+          id="input-value"
+          class="input-field"
+          placeholder="Input Value"
+          onchange="calculatePercentage()"
+        />
+        <input
+          type="number"
+          id="max-value"
+          class="input-field"
+          placeholder="Max Value"
+          onchange="calculatePercentage()"
+        />
+      </div>
+
+      <div id="graphs-section">
+        <h1>Graphs</h1>
+        <div class="graphs">
+          <div>
+            <div class="bar-chart">
+              <div class="bar" id="bar"></div>
+            </div>
+            <h1 class="percentage" id="percentage"></h1>
+            <h1 class="level">Level 1</h1>
+          </div>
+          <div>
+            <div class="pie-chart" id="pie-chart">
+            </div>
+            <h1 class="percentage" id="percentage"></h1>
+            <h1 class="level">Level 2</h1>
+          </div>
+          <div>
+            <div class="bar-chart">
+              <div class="gradient-bar" id="gradient-bar"></div>
+            </div>
+            <h1 class="percentage" id="percentage"></h1>
+            <h1 class="level">Level 3</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
