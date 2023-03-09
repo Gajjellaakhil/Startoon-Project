@@ -1,89 +1,117 @@
+/*
+These variables are defined globally in the :root pseudo-class,
+and can be used throughout the file by referencing the custom property.
+*/
 :root {
-    --white: #FFFFFF;
-    --lightBlue: #C2E3FF;
-    --blue: #008CFF;
-    --darkBlue: #003F73;
-  }
-  
-  .body {
-    padding: 16px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 30px;
-  }
-  
-  .input-field {
-    background-color: var(--lightBlue);
-    border-radius: 4px;
-    width: 310px;
-    height: 51px;
-    border: 1px solid transparent;
-  }
-  
-  input {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    padding-left: 16px;
-    color: var(--darkBlue);  
-  }
-  
-  h1 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: var(--darkBlue);
-  }
-  
-  .graphs {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 100px;
-  }
-  
-  .bar-chart {
-    display: flex;
-    align-items: flex-end;
-    width: 101px;
-    height: 275px;
-    border: 1px solid transparent;
-    background-color: var(--lightBlue);
-  }
-  
-  .bar {
-    background-color: var(--blue);
-    flex: 1;
-  }
-  
-  .gradient-bar {
-    background-image: linear-gradient(to top, var(--blue), var(--lightBlue));
-    flex: 1;
-  }
-  
-  .pie-chart {
-    width: 275px;
-    height: 275px;
-    border-radius: 50%;
-  }
-  
-  .level {
-    text-align: center;
-  }
-  
-  .percentage {
-    text-align: center;
-    color: var(--blue);
-  }
-  
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+  --white: #FFFFFF;
+  --lightBlue: #C2E3FF;
+  --blue: #008CFF;
+  --darkBlue: #003F73;
+}
+
+/* The .body class defines padding for the main container of the HTML file. */
+.body {
+  padding: 16px;
+}
+
+/* The .form class defines a flexbox container that aligns the form elements in a row,
+with a gap of 30 pixels between them. */
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* The .input-field class defines the style for the input fields,
+including a light blue background, border radius, width, height,
+and a transparent border. The input selector specifies the font size, style, weight,
+line height, and color for all input fields in the file. */
+.input-field {
+  background-color: var(--lightBlue);
+  border-radius: 4px;
+  width: 310px;
+  height: 51px;
+  border: 1px solid transparent;
+}
+
+input {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 16px;
+  color: var(--darkBlue);  
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--darkBlue);
+}
+
+/* The .graphs class defines a flexbox container that aligns the three graph
+elements in a row, with a gap of 100 pixels between them. */
+.graphs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+/* The .bar-chart class defines the style for the bar chart, including a
+flexbox container that aligns the bar in the chart,
+and a light blue background color with a transparent border.
+The .bar class defines the style for the actual bar in the chart,
+including a blue background color and flex-grow property to fill the container.
+The .gradient-bar class defines the style for the gradient bar in the chart,
+including a gradient background and flex-grow property. */
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  width: 101px;
+  height: 275px;
+  border: 1px solid transparent;
+  background-color: var(--lightBlue);
+}
+
+.bar {
+  background-color: var(--blue);
+  flex: 1;
+}
+
+.gradient-bar {
+  background-image: linear-gradient(to top, var(--blue), var(--lightBlue));
+  flex: 1;
+}
+
+/* The .pie-chart class defines the style for the pie chart,
+including a border radius to create a circular shape. */
+.pie-chart {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+}
+
+/* The .level class defines the style for the level text in each graph element,
+including center alignment.  */
+.level {
+  text-align: center;
+}
+
+/* The .percentage class defines the style for the percentage text in each graph element,
+including center alignment and a blue color. */
+.percentage {
+  text-align: center;
+  color: var(--blue);
+}
+
+/* Finally, the input::-webkit-outer-spin-button and input::-webkit-inner-spin-button
+selectors hide the default spin buttons that appear on input fields in some web browsers. */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

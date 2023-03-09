@@ -1,3 +1,7 @@
+<!--
+  This is an HTML file that includes a form for entering two numerical values,
+  and three graphs to display the results of calculations performed on those values.
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,10 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Links to the CSS -->
     <link rel="stylesheet" href="styles.css"></link>
+    <!-- Links to the javascript -->
     <script type="text/javascript" src="index.js"></script>
   </head>
   <body onload="initialize()">
+    <!-- 
+      The <body> section includes a <div> with a class of "body" that contains a heading ("Enter Values")
+      and a form with two input fields, each with an id attribute of "input-value" and "max-value", respectively.
+      The onchange attribute is set to a function called calculatePercentage(), which will be called every time one
+      of the input fields changes.
+    -->
     <div class="body">
       <h1>Enter Values</h1>
 
@@ -29,6 +41,14 @@
         />
       </div>
 
+      <!--
+        this is a <div> with an id of "graphs-section" that contains three sub-<div>s,
+        each of which represents a different graph. Each sub-<div> includes a <div> with a class of
+        "bar-chart" or "pie-chart" that will display the graph, and three <h1> elements with classes of "percentage",
+        "level", and "level-number" that will display information about the graph.
+        The id attribute of each percentage element is the same ("percentage"), which is not recommended since IDs
+        should be unique within an HTML document.
+      -->
       <div id="graphs-section">
         <h1>Graphs</h1>
         <div class="graphs">
